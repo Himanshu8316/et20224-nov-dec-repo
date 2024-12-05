@@ -70,6 +70,10 @@ Failing Test Case
     # Shows an error modal if in LiveTesting
     VerifyText          This text is not on the page    timeout=1s
 
+test
+    [Documentation]    ()=>{if(bl(t),er(t),t.value===Qr)throw t.error;return t.value} created using the QEditor
+
+
 *** Keywords ***
 
 Home
